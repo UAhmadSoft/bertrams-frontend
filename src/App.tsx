@@ -31,7 +31,7 @@ function App() {
   const handleSearch = async (page: number = 1) => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:3000/api/jobs?keyword=${keyword}&country=${country}&page=${page}&per_page=20`);
+      const response = await fetch(`http://82.197.94.14:3011/api/jobs?keyword=${keyword}&country=${country}&page=${page}&per_page=20`);
       if (!response.ok) {
         throw new Error('Failed to fetch jobs');
       }
