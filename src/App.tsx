@@ -46,6 +46,7 @@ function App() {
   };
 
   const handlePageChange = (event: React.ChangeEvent<unknown>, value: number) => {
+    console.log('event', event)
     setPage(value);
     handleSearch(value);
   };
